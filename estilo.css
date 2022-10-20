@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 *{
-margin: 0%;
-padding: 0%;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
 }
 header {
 height: 70px;
@@ -40,35 +43,55 @@ text-align: center;
 font-size: 25px;
 font-family: Arial, Helvetica, sans-serif;
 color: #fff;
-margin-top: 20px;
+margin-top: 30px;
+margin-bottom: 30px;
 }
-.servicios {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 25px;
-margin: 40px 20;
-padding: 20px;
+.card {
+width: 23%;
+margin: 1%;
+border-radius: 6px;
+overflow: hidden;
+background:#fff;
+box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+transition: all 400ms ease-out;
+cursor: default;
+float: left;
+padding: 10px;
 }
-.servicios img {
+.card:hover{
+box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+transform: translateY(-3%);
+}
+.card img{
 width: 100%;
-height: 180px;
-transition: all 0.5s ease;
-border-style: solid;
+height: 210px;
 }
-.servicios h2 {
-font-size: 25px;
-margin: 10px 0;
+.card .contenido-card{
+padding: 15px;
 text-align: center;
-color: #fff;
-font-family: Arial, Helvetica, sans-serif;
 }
-.servicios img:hover {
-transform: scale(0.95);
-border-radius: 20px;
+.card .contenido-card h3{
+margin-bottom: 15px;
+color: #7a7a7a;
+}
+.card .contenido-card a{
+display: inline-block;
+padding: 10px;
+margin-top: 10px;
+text-decoration: none;
+color: #2fb4cc;
+border: 1px solid #2fb4cc;
+border-radius: 4px;
+transition: all 400ms ease;
+margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+background: #2fb4cc;
+color: #fff;
 }
 footer {
 background: #000;
-margin-top: -20px;
+margin-top: 450px;
 }
 .col {
 column-count: 4;
@@ -105,7 +128,7 @@ background: white;
 ul li a:hover{
 color: #bbb;
 }
-@media screen and (max-width:700px){
+@media only screen and (min-width:320px) and (max-width:768px){
 .cards-banner-one .content {
 width: 80%;
 }
@@ -132,27 +155,21 @@ background: #555;
 display: none;
 position: static;
 }
-.menu a i {
-position: absolute;
-right: 230px;
-display: block;
-top: 172px;
-}
 #btn-menu:checked~ .menu {
 transform: translateX(0%);
 }
-.servicios{
-padding: 20px;
-width: 90%;
-}
-.servicios h2 {
-font-size: 20px;
+.card {
+width: 48%;
+margin: 1%;
 }
 .col {
 column-count: 1;
 }
 footer {
-height: 600px;
+margin-top: 780px;
+}
+.card .contenido-card h3{
+font-size: 17px;
 }
 }
    
