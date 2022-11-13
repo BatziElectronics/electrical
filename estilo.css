@@ -156,6 +156,9 @@ width: 50%;
 transform: translateX(-100%);
 transition: all 0.5s;
 }
+p {
+font-size: 15px;
+}
 .menu ul {
 display: block;
 background: #555;
